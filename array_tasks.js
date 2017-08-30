@@ -25,16 +25,19 @@ var arrayTasks = {
 	},
 
 //should find duplicate values in an array, returning a new array of the duplicates
-	findDuplicates: function (arr) {
+	// findDuplicates: function (arr) {
 	
-	},
-
-	// removeAndClone: function (arr, valueToRemove) {
-		
 	// },
 
+	removeAndClone: function (arr, valueToRemove) {
+		return arr.filter( function(value) {
+			return value !==valueToRemove;
+		})
+	},
+
+//should find all occurences of a value, returning an array of index positions
 	// findIndexesOf: function (arr, itemToFind) {
-		
+	// 	return arr.indexOf(itemToFind, arr);
 	// },
 
 	// sumOfAllEvenNumbersSquared: function (arr) {

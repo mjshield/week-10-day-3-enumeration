@@ -25,17 +25,17 @@ describe('Array tasks', function () {
 		assert.equal(arrayTasks.sum(arr), 15)
 	})
 
-	it('should find duplicate values in an array, returning a new array of the duplicates', function () {
+	xit('should find duplicate values in an array, returning a new array of the duplicates', function () {
 		var arr = [1, 2, 3, 4, 4, 5, 5, 5]
 		assert.deepEqual(arrayTasks.findDuplicates(arr), [4, 5])
 	})
 
-	xit('should remove all instances of a value from an array, returning a new array', function () {
+	it('should remove all instances of a value from an array, returning a new array', function () {
 		var arr = [1, 2, 3, 1, 4, 5, 1]
 		assert.deepEqual(arrayTasks.removeAndClone(arr, 1), [2, 3, 4, 5])
 	})
 
-	xit('should find all occurences of a value, returning an array of index positions', function () {
+	it('should find all occurences of a value, returning an array of index positions', function () {
 		var arr = [1, 2, 1, 3, 4, 1, 5]
 		assert.deepEqual(arrayTasks.findIndexesOf(arr, 1), [0, 2, 5])
 	})
